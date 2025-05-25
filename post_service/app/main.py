@@ -20,7 +20,7 @@ app.add_middleware(
 async def root():
     return {
         "suc": 1,
-        "msg": "Hello from FastAPI"
+        "msg": "Hello from Post Service"
     }
 
 app.include_router(router=post_router, prefix="/api/v1/posts", tags=["Posts"])

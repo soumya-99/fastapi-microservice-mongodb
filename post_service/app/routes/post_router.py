@@ -2,7 +2,7 @@ from datetime import datetime
 from uuid import uuid4
 from fastapi import APIRouter, HTTPException
 from models.post import Post, PostUpdate
-from config import db
+from db.config import db
 
 router = APIRouter()
 
